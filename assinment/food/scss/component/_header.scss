@@ -1,0 +1,160 @@
+#header {
+  max-width: percentage($number: 1);
+  background:
+  linear-gradient(
+    to right,
+    rgba($header-color,0.9),
+    rgba($header-color,0.3)
+  ),
+  url('../img/header-img.jpg'); 
+
+  @media screen and (min-width:769px) {
+    height: 100vh;
+    margin-bottom: 50px;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width:percentage($number: 1);
+
+  .navbar-container {
+    height: 150px;
+    @include display;
+    align-items: center;
+  
+    .brand-logo {
+      display: flex;
+      .brand {
+        padding: 20px 0 0 15px;
+        font-weight: 800;
+      }
+    }
+
+    .header-right {
+      text-align: right;
+    
+      .expresss-delivery {
+        color: $primary-color;
+        text-decoration: none;
+    
+        .shipping {
+          font-size: 30px;
+
+          @media screen and (max-width:769px) {
+            font-size: 10px;
+          }
+        }
+
+        @media screen and (max-width:769px) {
+          position: absolute;
+          right: 500px;
+          top: 100px;
+        }
+
+        @media screen and (max-width:414px) {
+          position: absolute;
+          right: 210px;
+          top: 100px;
+          font-size: 15px;
+        }
+      }
+
+      .humberger {
+        @media screen and (max-width:769px) {
+          display: block;
+          position: absolute;
+          height: 70px;
+          width: 80px;
+          top: 60px;
+          right: 40px;
+        }
+      }
+
+      input[type=checkbox] {
+        display: none;
+        width: 80px;
+        height: 52px;
+        color: #fff;
+
+        @media screen and (max-width:769px) {
+          display: block;
+        }
+      }
+
+      .hamburger-lines {
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 22px;
+
+        .line {
+          height: 3px;
+          width: 35px;
+          display: block;
+          background: $primary-color;
+          margin-bottom: 11px;  
+        }
+
+        @media screen and (max-width:769px) {
+          display: block;
+        }
+      }
+    }
+  
+    .menu-items {
+      @include display;
+      padding-top: 20px;
+
+      @media screen and (max-width:769px) {
+        display: none;
+      }
+
+      li {
+        margin-left: 30px;
+        @media screen and (max-width:769px) {
+          font-size: 10px;
+          margin-bottom: 50px;
+        }
+
+        a {
+          @include commoncode;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 60px auto;
+  line-height: 0.8;
+  
+  .content {
+    width: 420px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 3px dashed $primary-color;
+    padding: 10px;
+
+    @media screen and (max-width:414px) {
+      width: 310px;
+      padding: 10px;
+      line-height: 1;
+    }
+  }
+
+  .burger-week {
+    @include commoncode;
+    font-size: 50px;
+
+    @media screen and (max-width:769px) {
+      font-size: 30px;
+    }
+  }
+}

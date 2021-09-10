@@ -1,0 +1,95 @@
+// Footer
+.footer__container {
+  height: 400px;
+  margin: 50px auto;
+  background:
+  linear-gradient(
+    0deg,
+    rgba(black,0.8),
+    rgba(black,0.8)
+  ),
+
+  url('../img/product-img/footer-img-1.jpg');
+  @include backgroundimg;
+  color: $secondary-color;
+  
+  @media screen and (max-width:769px) {
+    height: 700px;
+  }
+
+  .footer__logo {
+    display: flex;
+    text-transform: uppercase;
+    padding: 80px 0 0 30px;
+
+    h1 {
+      padding: 15px 0 0 20px;
+      font-size: 35px;
+    }
+
+    a {
+      font-size: 70px;
+    }
+  }
+
+  .footer__content {
+    @include display;
+
+    @media screen and (max-width:414px) {
+      @include mediadisplay;
+    }
+
+    .footer__content-left {
+      padding: 30px;
+      opacity: 0.7;
+    }
+
+    .footer__content-right {
+      padding: 40px 60px 0 0;
+      text-transform: uppercase;
+      line-height: 0;
+
+      .location {
+        display: flex;
+        margin-bottom: 10px;
+
+        i {
+          @include rightfootericon;
+        }
+
+        p {
+          @include rightfooterpara;
+        }
+      }
+
+      .message {
+        display: flex;
+
+        i {
+          @include rightfootericon;
+        }
+        
+        p {
+          @include rightfooterpara;
+        }
+      }
+    }
+  }
+
+  .footer__bottom {
+    @include display;
+    padding: 50px 30px 20px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    @media screen and (max-width:414px) {
+      @include mediadisplay;
+    }
+
+    .social-links a {
+      color: $secondary-color;
+      font-size: 20px;
+      padding-right: 10px;
+    }
+  }
+}

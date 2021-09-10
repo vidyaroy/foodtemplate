@@ -1,0 +1,47 @@
+@mixin grid-items {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+@mixin border {
+  border: 1px solid $shadow-color;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+@mixin commoncode {
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+@mixin backgroundimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+@mixin display {
+  display: flex;
+  justify-content: space-between;
+}
+
+// footer__content-right
+@mixin rightfootericon {
+  font-size: 30px;
+  padding-right: 15px;
+}
+
+@mixin rightfooterpara {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+@mixin mediadisplay {
+  display: flex;
+  flex-direction: column;
+}

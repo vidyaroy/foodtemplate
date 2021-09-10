@@ -1,0 +1,52 @@
+// Banner
+.banner__section-container {
+  width: percentage($number: 1);
+  height: 60vh;
+  display: flex;
+  padding: 20px;
+  margin: 80px auto !important;
+  box-shadow: 10px 15px 18px 0px $shadow-color;
+
+  @media screen and (max-width:414px) {
+    height: 80vh;
+  }
+
+  .banner__content {
+    width: 550px;
+    line-height: 1.8;
+    padding: 20px;
+
+    .discover {
+      @include commoncode;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .circle {
+      font-size: 30px;
+      margin-top: 40px;
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        
+        &:first-child {
+          background-color: $header-color;
+        }
+      }
+    }
+  }
+  
+  .banner__img {
+    width: 550px;
+    background-image: url('../img/product-img/banner-1.jpg');
+    @include backgroundimg;
+  }
+}

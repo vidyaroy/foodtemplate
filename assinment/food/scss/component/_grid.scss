@@ -1,0 +1,25 @@
+// Grid
+.grid-container {
+   height: 70vh;
+   margin: 50px auto;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-gap: 30px;
+   text-align: left;
+
+   .item {
+     @include grid-items;
+     &:nth-child(1) {
+       grid-row: 1 / span 2;
+       background-image: url('../img/hamburger0.jpg');
+     }
+
+     &:nth-child(2) {
+       background-image: url('../img/ham.jpg');
+     }
+
+     &:nth-child(3) {
+       background-image: url('../img/hamburger-2.jpg');
+     }
+   }
+}

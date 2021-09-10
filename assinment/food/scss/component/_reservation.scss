@@ -1,0 +1,55 @@
+// Reservation
+.reservation__section {
+  height: 500px;
+  max-width: percentage($number: 1);
+  background:url('../img/product-img/reservation-model-1.jpg');
+  @include backgroundimg;
+  margin: 50px auto;
+
+  @media screen and (max-width:414px) {
+    height: 700px;
+  }
+
+  .reservation__table {
+    text-align: center;
+    padding: 30px;
+
+    h2,h1 {
+      @include commoncode;
+      font-weight: 900px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .reservation__form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media screen and (max-width:414px) {
+      @include mediadisplay;
+    }
+
+    input[type=text] {
+      @include border;
+      padding: 17px 120px 17px 10px;
+      margin: 10px;
+      font-weight: bold;
+    }
+    
+    a {
+       @include border;
+      position: relative;
+      top: 26px;
+      padding: 17px 95px;
+      margin: 10px;
+      font-weight: 800;
+      color: $secondary-color;
+      text-decoration: none;
+      background-color: $link-color;
+    }
+  }
+}
